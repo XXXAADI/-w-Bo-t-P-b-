@@ -15,8 +15,20 @@ module.exports.run = async({ event, api, Threads, Users }) => {
  if (type == "self-separation") {
   api.addUserToGroup(event.logMessageData.leftParticipantFbId, event.threadID, (error, info) => {
    if (error) {
-    api.sendMessage(`『٭』 ᏴᎡϴᏦᎬΝ ᎪᎪᎠᏆ 『٭』 Isse Dubara Add Nhi Kar Paya 🥺 ${name} Group Mai :( `, event.threadID)
-   } else api.sendMessage(`Bhag Ke Jaane Ka Nhi, ${name} Baby, Dekho Phir Se Add Kardiya Aapko`, event.threadID);
+    api.sendMessage(`‎‎𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇👈 
+●============================================● 𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
+●============================================● 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 https://www.facebook.com/aadibabu143?mibextid=ZbWKwL
+●============================================●
+
+                 🥰 𝐌𝐨𝐬𝐭 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 🥰 
+●============================================●𝐈𝐬𝐬𝐞 𝐝𝐮𝐛𝐚𝐫𝐚 𝐚𝐝𝐝 𝐧𝐡𝐢 𝐤𝐚𝐫 𝐩𝐚𝐲𝐚  ${name} 𝐆𝐫𝐨𝐮𝐩 𝐦𝐚𝐢 :( `, event.threadID)
+   } else api.sendMessage(`𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇👈 
+●============================================● 𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
+●============================================● 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 https://www.facebook.com/aadibabu143?mibextid=ZbWKwL
+●============================================●
+
+                 🥰 𝐌𝐨𝐬𝐭 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 🥰 
+●============================================●𝐁𝐡𝐚𝐠 𝐤𝐞 𝐣𝐚𝐚𝐧𝐞 𝐤𝐚 𝐧𝐡𝐢 , ${name} 𝐁𝐚𝐛𝐲, 𝐝𝐞𝐤𝐡𝐨 𝐩𝐡𝐢𝐫 𝐬𝐞 𝐚𝐝𝐝 𝐤𝐚𝐫 𝐝𝐢𝐲𝐚 𝐚𝐚𝐩𝐤𝐨`, event.threadID);
   })
  }
 }
