@@ -155,12 +155,10 @@ if ((event.body.toLowerCase() == "🤲") ||(event.body.toLowerCase() == "Assalam
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("Bot") == 0)) {
     var msg = {
-      body: `💙───${name}───💙
-      
-    ${rand}
-      
-      
-      `
+      body: `💙───${name}───💙\n\n                                                              ●=============================●
+
+                                                                                                                                                                                                                                                        ${rand}                                                                                             \n\n
+●=============================●`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
