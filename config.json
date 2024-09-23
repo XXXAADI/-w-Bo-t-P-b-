@@ -7,68 +7,45 @@
     "autoClean": false,
     "adminOnly": false,
     "keyAdminOnly": "",
-    "commandDisabled": [
-        "",
-        ""
-    ],
+    "commandDisabled": [],
     "eventDisabled": [],
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "〖 # 〗 ➺ 🌸𒁍आदि बाबू",
+    "BOTNAME": "🌸==𒁍आदि बाबू",
     "PREFIX": "#",
-    "OTHERBOT": [
-        "61565825826262"
-    ],
-    "UNSENTVIP": [
-        "100037743553265",
-        "61565825826262",
-        "100039840451887",
-        "61557670222046",
-        ""
-    ],
-    "GOD": [
-        "61565825826262",
-        "61563506060490",
-        "100039840451887"
-    ],
     "ADMINBOT": [
-        "100037743553265",
-        "100039840451887",
-        "61557670222046",
-        "61565825826262",
-        "",
-        "",
-        ""
+        "100010492052172",
+        "100083551732772",
+        "100083551732772"
     ],
-    "OWNER": "𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙",
-    "AGE": "21",
-    "GENDER": "𝗠𝗮𝗟𝗲",
-    "FACEBOOK": "https://www.facebook.com/profile.php?id=61565825826262&mibextid=ZbWKwL",
+    "OWNER": "BROKEN AADI",
+    "AGE": "22",
+    "GENDER": "Male",
+    "FACEBOOK": "https://www.facebook.com/share/p/fN7ZWrff4AtFwovN/?mibextid=oFDknk",
     "AutoOffBot": "disable",
-    "AutoOffBotStartSleep": "disable",
+    "AutoOffBotStartSleep": "01:00",
     "AutoOffBotSendMessage": "Bye everyone. i need to sleep i'll be right back at 5:00AM 🥰",
-    "AutoOffBotEndSleep": "disable",
-    "AutoGreet": "disable",
+    "AutoOffBotEndSleep": "05:00",
+    "AutoGreet": "enable",
     "AutoGreetWithSticker": "enable",
     "AutoGreetSendPerHour": "1",
     "AutoPost": "disable",
-    "AutoPostText": "༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐁𝐑𝐎𝐊𝐄𝐍 𝐀𝐀𝐃𝐈☜ ༺ ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𝐀𝐀𝐃𝐈〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ www.facebook.com/profile.php?id=61565825826262☜ ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 :- https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==☜",
-    "AutoPostPerHour": "1",
+    "AutoPostText": "Whats up Guys (every 12 hours)",
+    "AutoPostPerHour": "12",
     "AutoPostGreet": "disable",
     "AutoPostGreetPostPerHour": "6",
     "AutoPostChristmasCountdown": "disable",
-    "HolidayAutoGreet": "disable",
+    "HolidayAutoGreet": "enable",
     "ChristmasCountdown": "disable",
-    "AcceptFriendRequest": "accept",
-    "AutoPendingGroupChat": "accept",
+    "AcceptFriendRequest": "enable",
+    "AutoPendingGroupChat": "disable",
     "AutoBioStatus": "enable",
     "AutoBioStatusSetPerHour": "1",
-    "BioStatus": "༻𝐎𝐖𝐍𝐄𝐑:- ☞𝐁𝐑𝐎𝐊𝐄𝐍 𝐀𝐀𝐃𝐈☜ ༺ ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠𝐀𝐀𝐃𝐈〠.༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- ☞ www.facebook.com/profile.php?id=61565825826262☜ ֎𝘍𝘰𝘳 𝘈𝘯𝘺 𝘒𝘪𝘯𝘥 𝘖𝘧 𝘏𝘦𝘭𝘱 :- https://www.instagram.com/aadi_singh__143?igsh=MXVneXZ6bzR4bHhvcg==☜",
-    "AutoLeave": "enable",
-    "RandomRedditMemes": "enable",
+    "BioStatus": "https://www.facebook.com/100010492052172",
+    "AutoLeave": "disable",
+    "RandomRedditMemes": "disable",
     "RandomRedditMemesSendPerHour": "1",
-    "Randombibleverse": "disable",
     "Uptimelogs": true,
     "DATABASE": {
         "sqlite": {
@@ -82,6 +59,7 @@
         "pauseLog": true,
         "logLevel": "error",
         "selfListen": false,
+        "autoMarkRead": true,
         "userAgent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21"
     },
     "version": "1.2.14",
@@ -197,7 +175,11 @@
     "bannerbw": {
         "APIKEY": "ntkhang"
     },
-    "messageforrealcreator": {
-        "enable": true
+    "allpic": {
+        "cooldownTime": 1200000
+    },
+    "leave": {
+        "status": true,
+        "number": 0
     }
 }
