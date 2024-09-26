@@ -1,61 +1,31 @@
-name: Node.js CI with Database Update
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: '*/358 * * * *'  # Every 1 minute, adjust as needed for testing
+    branches: [ "main" ]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-    - uses: actions/checkout@v2
-
+    - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: 16.x
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Start the application
-      run: |
-        npm start &
-        sleep 15  # Wait for the server to start
-
-    - name: Wait for 5 hours and 58 minutes
-      run: |
-        echo "Waiting for 5 hours and 58 minutes before updating database"
-        sleep 60  # Sleep for 5 hours and 58 minutes (21580 seconds)
-
-    - name: Download updated data.sqlite
-      run: |
-       echo "Starting download..."
-       curl -v --retry 10 --retry-delay 20 --retry-max-time 600 --max-time 600 -o includes/data.sqlite "http://localhost:8000/sqlite?apikey=pubghate" 2>&1 | tee curl.log
-       echo "Database file updated"
-
-
-    - name: Debug GitHub URL
-      run: |
-        git remote -v  # Debugging step to check the correct remote URL
-
-    - name: Commit and push updated database
-      env:
-        MY_GIT_TOKEN: ${{ secrets.MY_GIT_TOKEN }}  # Use your GitHub Actions secret
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "actions@github.com"
-        git add includes/data.sqlite
-        git commit -m "Update data.sqlite file" || echo "No changes to commit"
-        git push https://x-access-token:${{ secrets.MY_GIT_TOKEN }}@github.com/${{ github.repository }} HEAD:main || echo "Push failed"
-        echo "Database file committed and pushed"
-
-    - name: Keep the workflow alive for 6 hours
-      run: |
-        echo "Workflow is running..."
-        sleep 120  # Adjust as needed to keep the workflow alive
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
