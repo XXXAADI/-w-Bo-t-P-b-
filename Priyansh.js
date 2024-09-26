@@ -394,8 +394,7 @@ loginApiData.sendMessage(``)
 cron.schedule('0 1 6 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("आदि बाबू , 🥀)", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -404,8 +403,7 @@ cron.schedule('0 1 6 * * *', () => {
 cron.schedule('0 1 8 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("Goodmorning everyone, have a nice day 🤗", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -423,8 +421,7 @@ cron.schedule('0 0 9 * * *', () => {
 cron.schedule('0 1 12 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("Good afternoon guys 🌅", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -442,8 +439,7 @@ cron.schedule('0 1 13 * * *', () => {
 cron.schedule('0 1 16 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("ITZ आदि बाबू बोट  🙈", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -452,8 +448,7 @@ cron.schedule('0 1 16 * * *', () => {
 cron.schedule('0 1 18 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("Good evening 🌆 guys, How's your day ✨", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -462,8 +457,7 @@ cron.schedule('0 1 18 * * *', () => {
 cron.schedule('0 1 20 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("You had dinner? 😋", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -472,8 +466,7 @@ cron.schedule('0 1 20 * * *', () => {
 cron.schedule('0 1 21 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("Goodevening humans, it's already evening time, have you all eaten? 🤔", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -482,8 +475,7 @@ cron.schedule('0 1 21 * * *', () => {
 cron.schedule('0 1 22 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("Goodnight guys, have a sweet dreams😴😴", now.threadID) : '');
   });
 }, {
   scheduled: true,
@@ -492,8 +484,7 @@ cron.schedule('0 1 22 * * *', () => {
 cron.schedule('0 59 23 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
     if (err) return console.log("ERR: "+err);
-    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("⇉  𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 𝐁𝐨𝐭 😇●============================================================●=𝐎𝐰𝐧𝐞𝐫 ➻    🌹 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 🌹
-●============================================================●𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 𝐥𝐢𝐧𝐤 😊👈 𝐀𝐚𝐝𝐢 𝐛𝐚𝐛𝐮 :- ☞ https://www.facebook.com/aadibabu143?mibextid=ZbWKwL", now.threadID) : '');
+    list.forEach(now => (now.isGroup == true && now.threadID != list.threadID) ? loginApiData.sendMessage("So jao guys 💖 bye tc ✨🖤", now.threadID) : '');
   });
 }, {
   scheduled: true,
